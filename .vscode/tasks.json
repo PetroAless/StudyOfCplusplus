@@ -19,30 +19,6 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compilatore: G:\\MSYS2\\mingw64\\bin\\g++.exe"
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: cpp.exe compila il file attivo",
-            "command": "G:\\MSYS2\\mingw64\\bin\\cpp.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Attività generata dal debugger."
         }
     ]
 }
