@@ -1,6 +1,13 @@
 #include <iostream>
-
+using namespace std;
+void spacing(){
+for(int i = 0 ; i<5 ; i++){
+        cout << endl;
+    }
+}
 int main(){
-    std::cout << std::endl << std::endl << "Il testo comincia da qui:" << std::endl;
-    std::cout << "Hello World!" << std::endl;
+    
+    cout << "Hello World!" << endl;
+    cout << 13 << endl;
+    spacing();
 }

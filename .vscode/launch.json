@@ -15,14 +15,8 @@
         "externalConsole": false, //set to true to see output in cmd instead
         "MIMode": "gdb",
         "miDebuggerPath": "G:/MSYS2/mingw64/bin/gdb.exe",
-        "setupCommands": [
-          {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ],
-        "preLaunchTask": "g++.exe build active file"
+
+        "preLaunchTask": "C/C++: g++.exe compila il file attivo"
       },
       {
         "name": "g++ build & run active file",
@@ -36,13 +30,7 @@
         "externalConsole": false, //set to true to see output in cmd instead
         "MIMode": "gdb",
         "miDebuggerPath": "G:/MSYS2/mingw64/bin",
-        "setupCommands": [
-          {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ],
-        "preLaunchTask": "g++ build & run active file"
+
+        "preLaunchTask": "C/C++: g++.exe compila il file attivo"
       }]
 }
