@@ -4,7 +4,7 @@
 		{
 			"type": "shell",
 			"label": "g++.exe build active file",
-			"command": "G:/MSYS2/mingw64/bin/g++.exe",
+			"command": "C:/msys64/mingw64/bin/g++.exe",
 			"args": [
 			  "-g",
 			  "${file}",
@@ -12,20 +12,20 @@
 			  "${fileDirname}/${fileBasenameNoExtension}.exe"
 			],
 			"options": {
-			  "cwd": "G:/MSYS2/mingw64/bin"
+			  "cwd": "C:/msys64/mingw64/bin"
 			}
 		  },
 		  {
 			"type": "shell",
 			"label": "g++ build & run active file",
-			"command": "G:/MSYS2/mingw64/bin/g++.exe",
+			"command": "C:/msys64/mingw64/bin/g++.exe",
 			"args": [
 			  "${file}",
 			  "-o",
 			  "${fileDirname}/${fileBasenameNoExtension}.exe"
 			],
 			"options": {
-			  "cwd": "G:/MSYS2/mingw64/bin"
+			  "cwd": "C:/msys64/mingw64/bin"
 			}
 		  }
 	]
