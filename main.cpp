@@ -7,15 +7,17 @@ using namespace std;
 void pointer(){
     int x[] = {4,3,2,1,5,6,7,8};
     for(int *i=x,j=0;j<8;i++,j++){
-        cout << "valore j:" << j << " e' uguale a:" << *i << endl;
+        cout << j << " element of array:" << *i << endl;
     }
 }
 
 int main(int argc, char *argv[]){
-    pointer();
+    //pointer();
+    
+
+
 
     
-    cout << "\nenter anything to end:\n";
-    getch();
+    //cout << "\nenter anything to end:\n";getch();
     return 0;
 }

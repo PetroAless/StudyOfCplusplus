@@ -1,0 +1,38 @@
+C++ review of knowledge
+
+types of operations:
+--pointer expressions, refer to function "void pointer"
+can be used with arrays to point to another variable,
+eg: int arr[] = {...};
+    int *ptr =arr;
+    cout << *ptr // output:arr[0]
+
+--bitwise expressions
+can be used to change the value to the bit
+eg:
+int x=5; //in 8 bits :00000111
+x=x>>1; //x in 8 bits now:00000011 (3)
+x = <<2; //x now:00001100 (12)
+can have its uses
+
+--special expressions
+-chained assignments
+a=b=14;//a=14, b=14
+
+-Embedded Assignment
+a=10+(b=12);//a=22,b=12
+
+-compound assignments
+a+=10;
+
+--goto
+jump statement to a certain label
+label:
+    ...
+    goto label;
+
+weird TYPES
+--lvalue
+reference to another var:
+int x =0;
+int &y=x; //now &y has value of x and references to the address of x
