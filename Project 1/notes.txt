@@ -36,3 +36,8 @@ weird TYPES
 reference to another var:
 int x =0;
 int &y=x; //now &y has value of x and references to the address of x
+
+pointers can be set in a function's signature, to change teh value of 
+vars passed by reference eg: myFunc(type *myVar){...}
+myFunc(&anotherVar);
+very useful!
