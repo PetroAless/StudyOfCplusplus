@@ -1,30 +1,21 @@
 #include <iostream>
 #include <string>
+#include <conio.h>
+#include <stdio.h>
 using namespace std;
-void spacing(){
-for(int i = 0 ; i<5 ; i++){
-        cout << endl;
+
+void pointer(){
+    int x[] = {4,3,2,1,5,6,7,8};
+    for(int *i=x,j=0;j<8;i++,j++){
+        cout << "valore j:" << j << " e' uguale a:" << *i << endl;
     }
 }
-int main(int argc, char* argv[]){
 
-    cout << "Hello World!" << endl;
-    cout << 13 << endl ;
+int main(int argc, char *argv[]){
+    pointer();
+
     
-    
-
-
-
-
-
-
-
-
-
-    string c="default";
-    cout << endl  << endl  << endl  << endl << "enter anything to end";
-    while(c=="default"){
-        cin >> c;
-    }
+    cout << "\nenter anything to end:\n";
+    getch();
     return 0;
 }

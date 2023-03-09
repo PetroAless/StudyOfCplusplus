@@ -1,1 +1,1 @@
-g++ main.cpp -o a -g && gdb a
+g++ main.cpp -o a -g && a.exe
