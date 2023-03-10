@@ -41,3 +41,27 @@ pointers can be set in a function's signature, to change teh value of
 vars passed by reference eg: myFunc(type *myVar){...}
 myFunc(&anotherVar);
 very useful!
+
+pointers:
+-char const *correctStr[]={
+        "correct",
+        "strings",
+        "through",
+        "pointers"
+    };
+    can be used as array of strings
+    const:here the const word is used for ISO reasons
+    cout:to refer to a single string just cout correctStr[0-3];
+
+-data type
+pointers must be of the same type of the var's address they contain
+
+pointers can be used with functions and contain the address of functions
+eg. void myFunc(int a, int b){...}
+void (*ptr) (int,int) = &myFunc;
+so to initialize a ptr define  typeOfFunc (*nameOfPtr) (typeOfParameters)=&nameOfFunc; 
+
+then a pointer to a function can be used to call the func indirectly
+eg:
+*ptrToFunc = &sum;
+cout << *ptrToFunc(2,6);//output:8  
