@@ -1,0 +1,67 @@
+C++ review of knowledge
+
+types of operations:
+--pointer expressions, refer to function "void pointer"
+can be used with arrays to point to another variable,
+eg: int arr[] = {...};
+    int *ptr =arr;
+    cout << *ptr // output:arr[0]
+
+--bitwise expressions
+can be used to change the value to the bit
+eg:
+int x=5; //in 8 bits :00000111
+x=x>>1; //x in 8 bits now:00000011 (3)
+x = <<2; //x now:00001100 (12)
+can have its uses
+
+--special expressions
+-chained assignments
+a=b=14;//a=14, b=14
+
+-Embedded Assignment
+a=10+(b=12);//a=22,b=12
+
+-compound assignments
+a+=10;
+
+--goto
+jump statement to a certain label
+label:
+    ...
+    goto label;
+
+weird TYPES
+--lvalue
+reference to another var:
+int x =0;
+int &y=x; //now &y has value of x and references to the address of x
+
+pointers can be set in a function's signature, to change teh value of 
+vars passed by reference eg: myFunc(type *myVar){...}
+myFunc(&anotherVar);
+very useful!
+
+pointers:
+-char const *correctStr[]={
+        "correct",
+        "strings",
+        "through",
+        "pointers"
+    };
+    can be used as array of strings
+    const:here the const word is used for ISO reasons
+    cout:to refer to a single string just cout correctStr[0-3];
+
+-data type
+pointers must be of the same type of the var's address they contain
+
+pointers can be used with functions and contain the address of functions
+eg. void myFunc(int a, int b){...}
+void (*ptr) (int,int) = &myFunc;
+so to initialize a ptr define  typeOfFunc (*nameOfPtr) (typeOfParameters)=&nameOfFunc; 
+
+then a pointer to a function can be used to call the func indirectly
+eg:
+*ptrToFunc = &sum;
+cout << *ptrToFunc(2,6);//output:8  

@@ -1,0 +1,1 @@
+g++ main.cpp -o a -g && a.exe
