@@ -2,7 +2,10 @@
 #include <string>
 #include <conio.h>
 #include <stdio.h>
+#include <cmath>
+#include <array>
 using namespace std;
+
 
 void pointer(){
     int x[] = {4,3,2,1,5,6,7,8};
@@ -18,18 +21,25 @@ void swap(int *a,int *b){
 int sum(int a,int b){
     return a+b;
 }
+int getAbsSum(int arr[],int n) {
+    
+    int sum=0;
+    
+    for(int i=0;i<n;i++,*arr++){
+        sum+=abs(*arr);
+    }
+
+	return sum;
+}
 int main(int argc, char *argv[]){
     //pointer();
-    int *arr=new int[8];
-    for(int i=0;i<8;i++){
-        arr[i]=i+(rand()%8)+2;
-        cout << "arr["<<i<<"]:" << arr[i] << endl;
-    }
+    int arr[] = {1,2,1,-12,0,90,12};
+    int arrSize = sizeof(arr)/sizeof(arr[0]);
     
     
-    for(int i=0;i<sizeof(arr);*arr++,i++){
-        printf("*arr:%d\n",*arr);
-    }
+    cout << getAbsSum(arr,arrSize);
+
+    
     
     //cout << "\nenter anything to end:\n";getch();
     return 0;
